@@ -53,6 +53,11 @@ model_list:
       api_key: "os.environ/DEEPSEEK_API_KEY"
 
   # --- Google Gemini (原生，多 Key 负载均衡) ---
+  - model_name: gemini/gemini-3-flash-preview-free
+    litellm_params:
+      model: gemini/gemini-3-flash-preview-free
+      api_key: "os.environ/AIHUBMIX_API_KEY"  
+      
   - model_name: gemini/gemini-2.5-flash
     litellm_params:
       model: gemini/gemini-2.5-flash
